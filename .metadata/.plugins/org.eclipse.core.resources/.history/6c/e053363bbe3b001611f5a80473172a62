@@ -1,0 +1,27 @@
+
+public class ClassOne {
+	
+	public boolean isInteger(String a){
+		boolean ret = false;
+		try {
+			
+			Integer.parseInt(a);
+			ret = true;
+			
+		} catch (Exception e) {
+			System.out.println(e +" is not an integer");
+			ret = false;
+		}
+		return ret;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(System.getProperty("java.runtime.version"));
+		ClassOne prog = new ClassOne();
+		System.out.println(prog.isInteger("a"));
+		System.out.println(prog.isInteger("1"));
+		
+	
+	}
+
+}

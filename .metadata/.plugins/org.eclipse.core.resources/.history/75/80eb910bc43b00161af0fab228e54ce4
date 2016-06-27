@@ -1,0 +1,7 @@
+
+public interface Tall {
+	
+	boolean isInteger(Integer a);
+	
+
+}

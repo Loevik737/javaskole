@@ -1,0 +1,18 @@
+
+public class ClassOne {
+	
+	public boolean isInteger(String a){
+		try {
+			Integer.parseInt(a);
+			
+		} catch (Exception e) {
+			System.out.println(e +" is not an integer");
+		}
+	}
+
+	public static void main(String[] args) {
+		System.out.println(System.getProperty("java.runtime.version"));
+
+	}
+
+}
